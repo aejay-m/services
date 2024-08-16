@@ -1,4 +1,4 @@
-/* Reset some default browser styles */
+
 
 body, html {
     margin: 0;
@@ -9,27 +9,27 @@ body, html {
    /* display: grid;*/
 }
 
-/* Highlight specific text by orange */
+
 .highlight {
-    color: #F47C1C; /* Set text color for the span element */
+    color: #F47C1C; 
 }
 
 
 .navbar {
     display: flex;
-    align-items: center; /* Vertically centers items */
+    align-items: center; 
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
-    background: rgba(0, 0, 0, 0.0); /* Transparent background for the navbar */
-    color: white; /* Text color for navbar links */
-    padding: 15px 20px; /* Adjust padding as needed */
-    z-index: 3; /* Ensures the navbar is above the overlay but below the content */
+    background: rgba(0, 0, 0, 0.0);
+    color: white;
+    padding: 15px 20px; 
+    z-index: 3;=
 }
-/* Styling for the logo container */
+=
 .logo-container {
-    margin-right: 1px; /* Space between the logo and the navigation links */
+    margin-right: 1px; ==
 }
 
 .logo {
@@ -163,14 +163,14 @@ body, html {
     margin-top: 20px;
     /*margin-left: 250px;*/
     background-color: transparent;  /*Background becomes transparent*/
-    color: whitesmoke; /*Optional: change text color to contrast with the transparent background*/
-    border: 0.1px solid whitesmoke; /* Optional: add a border to make the button visible*/
+    color: whitesmoke; 
+    border: 0.1px solid whitesmoke; 
     padding: 3.5px 14px;
     border-radius: 3px;
     text-decoration: none;
     font-size: 0.6rem;
-    position: relative; /* Ensures the button is clickable */
-    z-index: 3; /* Ensure the button is above both the overlay and content */
+    position: relative; 
+    z-index: 3;
 }
 
 .btn .arrow {
@@ -192,23 +192,21 @@ body, html {
     background-color: rgb(244, 244, 244);
 }
 
-/* Styling for headings */
+
 .headings h1 {
-    /* Adjust font size as needed */
-    /*margin: 0;*/
-    margin: 0 0 38px 0; /* Add space below the h1 */
+    margin: 0 0 38px 0; 
     text-align: left;
     font-size: 2rem;
-    padding-left: 80px; /* Optional: move the text within the h1 to the right */
+    padding-left: 80px;
 }
 
 .headings h2 {
-    font-size: 1.5rem; /* Adjust font size as needed */
-   /*margin: 0;*/
-    color: #555; /* Optional: color for the h2 */
-    margin: 50px 0 3px 0; /* Add space below the h2 */
+    font-size: 1.5rem;
+
+    color: #555; 
+    margin: 50px 0 3px 0; 
     text-align: left;
-    padding-left: 80px; /* Optional: move the text within the h2 to the right */
+    padding-left: 80px;
 }
 
 
@@ -216,9 +214,9 @@ body, html {
 .container-wrapper {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center; /* Center items horizontally */
-    gap: 20px; /* Spacing between items */
-    padding: 40px; /* Padding around the container */
+    justify-content: center; 
+    gap: 20px;
+    padding: 40px; 
 }
 
 /* Individual Container Style */
@@ -241,7 +239,7 @@ body, html {
     border-radius: 10px;
     box-shadow: 0 0 20px #02005770;
     transition: 0.5s;
-    box-sizing: border-box; /* Includes padding and border in the element's total width and height */
+    box-sizing: border-box; 
 }
 
 /* Hover Effect for Card Box */
@@ -267,9 +265,9 @@ body, html {
 
 /* Icon Image Styling */
 .icon img {
-    max-width: 50%; /* Ensure the image does not exceed the container's width */
-    max-height: 50%; /* Ensure the image does not exceed the container's height */
-    object-fit: contain; /* Preserve the aspect ratio of the image */
+    max-width: 50%; 
+    max-height: 50%; 
+    object-fit: contain; 
 }
 
 /* Hover Effect for Icon */
@@ -284,23 +282,23 @@ body, html {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    text-align: center; /* Center text within content */
-    flex-grow: 1; /* Allow content to grow and fill space */
+    text-align: center; 
+    flex-grow: 1; 
 }
 
 .content h2 {
     font-size: 12px;
     font-weight: 500;
     color: #ffffff;
-    padding: 10px 0; /* Increase padding for better spacing */
+    padding: 10px 0; 
 }
 
 .content p {
     font-size: 10px;
     line-height: 15px;
     color: #ffffff;
-    padding: 0; /* Remove padding for uniform spacing */
-    margin: 0; /* Remove default margin */
+    padding: 0;
+    margin: 0;
 }
 
 
@@ -312,19 +310,19 @@ body, html {
 }
 
 .decor-image {
-    width: 300px; /* Adjust width as needed */
+    width: 300px; 
     height: auto;
-    margin-right: 80px; /* Space between image and text */
+    margin-right: 80px; 
 }
 
 .decor-text {
-    max-width: 800px; /* Adjust to control text block width */
+    max-width: 800px; 
     margin-left: 80px;
 }
 
 .decor-text h2 {
     margin-top: 0;
-    margin-bottom: 10px; /* Space below the heading */
+    margin-bottom: 10px; 
     font-family: "Poppins", sans-serif;
     font-weight: 800;
     font-style: italic;
@@ -333,7 +331,7 @@ body, html {
 
 .decor-text p {
     margin: 0;
-    padding-bottom: 20px; /* Space below the paragraph */
+    padding-bottom: 20px; 
     font-weight: 400;
     font-style: normal;
     font-size: 13px;
@@ -344,16 +342,16 @@ body, html {
     width: 200px;
     height: 13px;
     border: 0;
-    background-color: black; /* Black color for the divider */
-    margin-top: 20px; /* Space above the divider */
+    background-color: black; 
+    margin-top: 20px;
     margin-left: 1px;
 }
 
 
 .heading-wrapper {
-    max-width: 960px; /* Adjust this value to match the container's width or margin */
-    margin: 0 auto; /* Center horizontally */
-    padding: 0 20px; /* Add some horizontal padding */
+    max-width: 960px; 
+    margin: 0 auto;
+    padding: 0 20px;
     font-weight: 700;
     font-style: normal;
     text-align: center;
@@ -367,9 +365,9 @@ body, html {
 .expertise-section {
     display: flex;
     flex-wrap: wrap;
-    gap: 20px; /* Space between containers */
-    padding: 40px; /* Padding around the section */
-    justify-content: center; /* Center containers horizontally */
+    gap: 20px;
+    padding: 40px;
+    justify-content: center
     background-color: rgb(244, 244, 244);
 
 }
@@ -379,14 +377,14 @@ body, html {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 180px; /* Set the width of each container */
-    height: 300px; /* Set the height of each container */
+    width: 180px; 
+    height: 300px;
     background-size: cover;
     background-position: center;
     position: relative;
     overflow: hidden;
-    background-color: rgba(0, 0, 0, 0.765); /* Darken the background image */
-    color: #ffffff; /* Text color */
+    background-color: rgba(0, 0, 0, 0.765);
+    color: #ffffff;
 }
 
 /* Dark Overlay Styling */
@@ -397,7 +395,7 @@ body, html {
     left: 0;
     width: 100%;
     height: 100%; 
-    background: rgba(0, 0, 0, 0.5); /* Dark overlay effect */
+    background: rgba(0, 0, 0, 0.5); 
     z-index: 1;
     
 }
@@ -406,7 +404,7 @@ body, html {
 .text-overlay {
     position: relative;
     z-index: 2;
-    font-size: 12px; /* Adjust text size */
+    font-size: 12px;
     text-align: center;
     padding: 20px;
     font-weight: 300;
@@ -415,7 +413,7 @@ body, html {
 }
 
 .selling-image {
-    width: 500px; /* Adjust width as needed */
+    width: 500px; 
     height: auto;
     height: auto;
     margin-left: 120px;
@@ -431,51 +429,51 @@ body, html {
 /* Circles Section */
 .circles-section, .buyer-process-content {
     display: flex;
-    flex-wrap: wrap; /* Allows wrapping to the next line if necessary */
-    justify-content: center; /* Centers items horizontally */
-    gap: 20px; /* Space between circles */
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px; 
     padding: 20px;
 }
 
 .circle-container {
     text-align: center;
-    flex: 1 1 calc(20% - 20px); /* Flex-basis with spacing */
-    max-width: 150px; /* Limit max width to prevent overflow */
+    flex: 1 1 calc(20% - 20px); 
+    max-width: 150px; 
 }
 
 .circle {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 80px; /* Circle size */
-    height: 80px; /* Circle size */
+    width: 80px;
+    height: 80px; 
     background-color: #000;
-    border-radius: 50%; /* Makes the div a circle */
+    border-radius: 50%; 
     color: #fff;
-    margin: 0 auto; /* Center horizontally */
-    font-size: 1.5rem; /* Font size for number */
+    margin: 0 auto;
+    font-size: 1.5rem; 
     font-weight: bold;
 }
 
 .description {
-    margin-top: 10px; /* Space between circle and text */
+    margin-top: 10px; 
     color: #000;
-    font-size: 0.6rem; /* Font size for description */
+    font-size: 0.6rem;
     font-weight: 500;
     font-style: normal;
 }
 
 /* Buyer Process Section */
 .buyer-process {
-    background-color: #000; /* Background color for the section */
-    color: #fff; /* Text color for the section */
+    background-color: #000; 
+    color: #fff; 
     padding: 20px;
-    text-align: center; /* Center the header text */
+    text-align: center;
 }
 
 .buyer-process-header {
-    color: #fff; /* Text color for the header */
-    margin-bottom: 20px; /* Space below the header */
+    color: #fff;
+    margin-bottom: 20px; /
     font-weight: 600;
     font-style: normal;
     text-align: center;
@@ -512,18 +510,18 @@ body, html {
 /* Responsive adjustments */
 @media (max-width: 1200px) {
     .box {
-        width: 80%; /* Adjust width for smaller screens */
+        width: 80%; 
     }
 }
 
 @media (max-width: 768px) {
     .container {
-        width: calc(50% - 10px); /* Adjust width for smaller screens */
-        height: auto; /* Let height adjust automatically */
+        width: calc(50% - 10px); 
+        height: auto; 
     }
 
     .box {
-        width: 90%; /* Adjust width for smaller screens */
+        width: 90%; 
     }
 }
 
@@ -584,9 +582,9 @@ body {
 /* Grid container */
 .image-text-grid {
     display: grid;
-    grid-template-columns: .5fr .5fr; /* Adjust column sizes as needed */
-    gap: 20px; /* Space between columns */
-    align-items: center; /* Align items vertically centered */
+    grid-template-columns: .5fr .5fr; 
+    gap: 20px; 
+    align-items: center; 
     padding: 50px;
 }
 
@@ -597,10 +595,10 @@ body {
 }
 
 .image-container img {
-    width: 100%; /* Make image width 100% of its container */
-    height: 100%; /* Make image height 100% of its container */
-    object-fit: cover; /* Cover the container while preserving aspect ratio */
-    display: block; /* Removes bottom space under image */
+    width: 100%; 
+    height: 100%; 
+    object-fit: cover; 
+    display: block; 
 }
 
 /* Text container */
@@ -683,13 +681,13 @@ body {
     grid-template-columns: repeat(auto-fit, minmax(50px, 1fr));
     gap: 1px;
     padding: 10px;
-    max-width: 1200px; /* Optional: limit the maximum width of the grid container */
+    max-width: 1200px;
     width: 100%;
 }
 
 .grid-item {
     padding: 50px;
-    text-align: center; /* Center text horizontally */
+    text-align: center; 
 }
 
 .grid-item h2 {
@@ -710,7 +708,7 @@ body {
 }
 
 .highlight2 {
-    color: #444444; /* Set text color for the span element */
+    color: #444444;
 }
 
 
@@ -734,16 +732,11 @@ body {
 }
 
 .collection-logo img {
-    max-width: 100%; /* Ensure image fits within container */
-    height: auto; /* Maintain aspect ratio */
+    max-width: 100%; 
+    height: auto; 
 }
 
 /*work with us*/
-/* Apply basic styling to the body */
-body {
-    margin: 0;
-    font-family: Arial, sans-serif;
-}
 
 /* Style for the Work With Us section */
 .work-with-us {
@@ -759,7 +752,7 @@ body {
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(0, 0, 0, 0.5); /* Black overlay with 50% opacity */
+    background: rgba(0, 0, 0, 0.5);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -793,7 +786,7 @@ body {
     margin-top: 20px;
     color: #fff;
     background: transparent;
-    border: 0.1px solid whitesmoke; /* Optional: add a border to make the button visible*/
+    border: 0.1px solid whitesmoke; 
     text-decoration: none;
     font-size: 0.7rem;
     transition: all 0.3s ease;    
