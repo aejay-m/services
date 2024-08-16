@@ -1,0 +1,959 @@
+/* Reset some default browser styles */
+
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: "Poppins", "sans-serif";
+    overflow-x: hidden;
+   /* display: grid;*/
+}
+
+/* Highlight specific text by orange */
+.highlight {
+    color: #F47C1C; /* Set text color for the span element */
+}
+
+
+.navbar {
+    display: flex;
+    align-items: center; /* Vertically centers items */
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.0); /* Transparent background for the navbar */
+    color: white; /* Text color for navbar links */
+    padding: 15px 20px; /* Adjust padding as needed */
+    z-index: 3; /* Ensures the navbar is above the overlay but below the content */
+}
+/* Styling for the logo container */
+.logo-container {
+    margin-right: 1px; /* Space between the logo and the navigation links */
+}
+
+.logo {
+    margin-left: 1px;
+    height: 12px; /* Adjust based on your logo size */
+    width: auto; /* Keeps the aspect ratio of the logo */
+}
+
+/* Styling for the navigation links */
+.navbar-links {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-grow: 1; /* Allows the navbar links to take up available space */
+    justify-content: center; /* Center the navigation links horizontally */
+}
+
+.navbar-links li {
+    margin: 0 18px; /* Adjust spacing between navigation items */
+}
+
+.navbar-links a {
+    color: rgba(255, 255, 255, 0.678); /* Color of the navigation links */
+    text-decoration: none; /* Remove underline from links */
+    font-size: 0.7rem; /* Adjust font size as needed */
+    font-family: "Poppins", sans-serif;
+    font-weight: 200;
+    font-style: normal;
+}
+
+.navbar-links a:hover {
+    text-decoration: underline; /* Add underline on hover */
+    color: whitesmoke;
+}
+
+
+/* Hamburger menu styling */
+.hamburger {
+    display: none; /* Hide hamburger menu by default */
+    margin-right: auto; /* Push hamburger to the far right */
+    
+}
+
+
+
+
+/* Styling for the header */
+.header {
+    position: relative;
+    width: 100%;
+    height: 600px; /* Adjust as needed */
+    background-image: url('images/main-pic.jpeg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    overflow: hidden; /* Ensures the overlay doesn't overflow the header */
+}
+
+.header p {
+    font-size: 0.7rem; /* Smaller than the header text but still prominent */
+    margin-bottom: 25px;
+    color: white; /* Ensure the paragraph text color is white */
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    letter-spacing: 1px;
+    line-height: 22px;
+}
+
+.typing-animation {
+    font-family: "Poppins", sans-serif;
+    font-size: 1rem;
+    color: white; /* Ensure the text color is white */
+    border-right: 4px solid white; /* Simulates cursor */
+    white-space: nowrap; /* Prevents text from wrapping */
+    overflow: hidden; /* Hides the overflowing text */
+    animation: typing 4s steps(40, end) 1s forwards, hide-caret 4s steps(40, end) 1s forwards;
+    text-align: center; /* Center-aligns the text within the element */
+    width: fit-content; /* Ensures the element's width fits the content */
+    margin: 0 auto; /* Centers the element horizontally within its container */
+}
+
+/* Typing animation */
+@keyframes typing {
+    from { width: 0; }
+    to { width: 100%; }
+}
+
+/* Hide cursor after typing is complete */
+@keyframes hide-caret {
+    from { border-color: white; }
+    to { border-color: transparent; }
+}
+
+.header a { /*for anchor button*/
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+}
+
+.header::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Adjust the alpha value (0.5) for desired darkness */
+    z-index: 1; /* Ensures the overlay is on top of the background image */
+}
+
+.header-content {
+    position: relative; /* Ensures content is above the overlay */
+    z-index: 2; /* Above the overlay */
+    padding-top: 150px;
+    text-align: center; /* Align text to the right within the content container */
+}
+
+.header-title {
+    font-size: 3rem; /* Adjust the size of the header text as needed */
+    font-weight: 500;
+    color: whitesmoke;
+    letter-spacing: 11px;
+}
+
+/* Button styles */
+.btn {
+    display: inline-flex;
+    align-items: center;
+    margin-top: 20px;
+    /*margin-left: 250px;*/
+    background-color: transparent;  /*Background becomes transparent*/
+    color: whitesmoke; /*Optional: change text color to contrast with the transparent background*/
+    border: 0.1px solid whitesmoke; /* Optional: add a border to make the button visible*/
+    padding: 3.5px 14px;
+    border-radius: 3px;
+    text-decoration: none;
+    font-size: 0.6rem;
+    position: relative; /* Ensures the button is clickable */
+    z-index: 3; /* Ensure the button is above both the overlay and content */
+}
+
+.btn .arrow {
+    margin-left: 10px;
+    display: inline-block;
+    font-size: 1.2rem; /* Adjust size as needed */
+}
+
+/* Optional: Add hover effect */
+.btn:hover {
+    border:none;
+    background-color: black;
+    color: whitesmoke;
+}
+
+.main-section {
+    padding: 20px;
+    text-align: center;
+    background-color: rgb(244, 244, 244);
+}
+
+/* Styling for headings */
+.headings h1 {
+    /* Adjust font size as needed */
+    /*margin: 0;*/
+    margin: 0 0 38px 0; /* Add space below the h1 */
+    text-align: left;
+    font-size: 2rem;
+    padding-left: 80px; /* Optional: move the text within the h1 to the right */
+}
+
+.headings h2 {
+    font-size: 1.5rem; /* Adjust font size as needed */
+   /*margin: 0;*/
+    color: #555; /* Optional: color for the h2 */
+    margin: 50px 0 3px 0; /* Add space below the h2 */
+    text-align: left;
+    padding-left: 80px; /* Optional: move the text within the h2 to the right */
+}
+
+
+/* Container Wrapper Flexbox */
+.container-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Center items horizontally */
+    gap: 20px; /* Spacing between items */
+    padding: 40px; /* Padding around the container */
+}
+
+/* Individual Container Style */
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Card Box Styling */
+.card-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Space between icon and content */
+    align-items: center;
+    width: 180px; /* Consistent width */
+    height: 250px; /* Fixed height to ensure uniformity */
+    background: rgb(0, 0, 0);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px #02005770;
+    transition: 0.5s;
+    box-sizing: border-box; /* Includes padding and border in the element's total width and height */
+}
+
+/* Hover Effect for Card Box */
+.card-box:hover {
+    background: #F47C1C;
+    transform: translateY(-20px);
+}
+
+/* Icon Styling */
+.icon {
+    font-size: 24px; /* Adjust font size if needed */
+    color: #ffffff;
+    background: #ffffff;
+    padding: 15px; /* Adjust padding to control size */
+    border-radius: 50%;
+    transition: 0.5s;
+    width: 50px; /* Ensure width matches height for a perfect circle */
+    height: 50px; /* Ensure height matches width for a perfect circle */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Icon Image Styling */
+.icon img {
+    max-width: 50%; /* Ensure the image does not exceed the container's width */
+    max-height: 50%; /* Ensure the image does not exceed the container's height */
+    object-fit: contain; /* Preserve the aspect ratio of the image */
+}
+
+/* Hover Effect for Icon */
+.card-box:hover .icon {
+    color: #ffffff;
+    background: rgb(255, 255, 255);
+}
+
+/* Content Styling */
+.content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center; /* Center text within content */
+    flex-grow: 1; /* Allow content to grow and fill space */
+}
+
+.content h2 {
+    font-size: 12px;
+    font-weight: 500;
+    color: #ffffff;
+    padding: 10px 0; /* Increase padding for better spacing */
+}
+
+.content p {
+    font-size: 10px;
+    line-height: 15px;
+    color: #ffffff;
+    padding: 0; /* Remove padding for uniform spacing */
+    margin: 0; /* Remove default margin */
+}
+
+
+.decor-guidance {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    margin: 50px;
+}
+
+.decor-image {
+    width: 300px; /* Adjust width as needed */
+    height: auto;
+    margin-right: 80px; /* Space between image and text */
+}
+
+.decor-text {
+    max-width: 800px; /* Adjust to control text block width */
+    margin-left: 80px;
+}
+
+.decor-text h2 {
+    margin-top: 0;
+    margin-bottom: 10px; /* Space below the heading */
+    font-family: "Poppins", sans-serif;
+    font-weight: 800;
+    font-style: italic;
+    font-size: 35px;
+}
+
+.decor-text p {
+    margin: 0;
+    padding-bottom: 20px; /* Space below the paragraph */
+    font-weight: 400;
+    font-style: normal;
+    font-size: 13px;
+    letter-spacing: 0.8;
+}
+
+.decor-divider {
+    width: 200px;
+    height: 13px;
+    border: 0;
+    background-color: black; /* Black color for the divider */
+    margin-top: 20px; /* Space above the divider */
+    margin-left: 1px;
+}
+
+
+.heading-wrapper {
+    max-width: 960px; /* Adjust this value to match the container's width or margin */
+    margin: 0 auto; /* Center horizontally */
+    padding: 0 20px; /* Add some horizontal padding */
+    font-weight: 700;
+    font-style: normal;
+    text-align: center;
+}
+
+.second-section{
+    padding: 20px;
+    background-color: rgb(244, 244, 244);
+}
+
+.expertise-section {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px; /* Space between containers */
+    padding: 40px; /* Padding around the section */
+    justify-content: center; /* Center containers horizontally */
+    background-color: rgb(244, 244, 244);
+
+}
+
+/* Expertise Container Styling */
+.expertise-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 180px; /* Set the width of each container */
+    height: 300px; /* Set the height of each container */
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    overflow: hidden;
+    background-color: rgba(0, 0, 0, 0.765); /* Darken the background image */
+    color: #ffffff; /* Text color */
+}
+
+/* Dark Overlay Styling */
+.expertise-container::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%; 
+    background: rgba(0, 0, 0, 0.5); /* Dark overlay effect */
+    z-index: 1;
+    
+}
+
+/* Text Overlay Styling */
+.text-overlay {
+    position: relative;
+    z-index: 2;
+    font-size: 12px; /* Adjust text size */
+    text-align: center;
+    padding: 20px;
+    font-weight: 300;
+    font-style: normal;
+
+}
+
+.selling-image {
+    width: 500px; /* Adjust width as needed */
+    height: auto;
+    height: auto;
+    margin-left: 120px;
+}
+
+.selling-process{
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    margin: 10px;
+}
+
+/* Circles Section */
+.circles-section, .buyer-process-content {
+    display: flex;
+    flex-wrap: wrap; /* Allows wrapping to the next line if necessary */
+    justify-content: center; /* Centers items horizontally */
+    gap: 20px; /* Space between circles */
+    padding: 20px;
+}
+
+.circle-container {
+    text-align: center;
+    flex: 1 1 calc(20% - 20px); /* Flex-basis with spacing */
+    max-width: 150px; /* Limit max width to prevent overflow */
+}
+
+.circle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80px; /* Circle size */
+    height: 80px; /* Circle size */
+    background-color: #000;
+    border-radius: 50%; /* Makes the div a circle */
+    color: #fff;
+    margin: 0 auto; /* Center horizontally */
+    font-size: 1.5rem; /* Font size for number */
+    font-weight: bold;
+}
+
+.description {
+    margin-top: 10px; /* Space between circle and text */
+    color: #000;
+    font-size: 0.6rem; /* Font size for description */
+    font-weight: 500;
+    font-style: normal;
+}
+
+/* Buyer Process Section */
+.buyer-process {
+    background-color: #000; /* Background color for the section */
+    color: #fff; /* Text color for the section */
+    padding: 20px;
+    text-align: center; /* Center the header text */
+}
+
+.buyer-process-header {
+    color: #fff; /* Text color for the header */
+    margin-bottom: 20px; /* Space below the header */
+    font-weight: 600;
+    font-style: normal;
+    text-align: center;
+  
+}
+
+/* Styles for the circles in the buyer process */
+.buyer-process .circle {
+    background-color: #fff; /* Circle background color for the new section */
+    color: #000; /* Circle text color for the new section */
+}
+
+.buyer-process .description {
+    color: #fff; /* Text color beneath the circle */
+    margin-top: 10px; /* Space between circle and text */
+    font-style: normal;
+    font-weight: 500;
+   
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .circle-container {
+        flex: 1 1 calc(50% - 40px); /* Adjust for medium screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .circle-container {
+        flex: 1 1 100%; /* Full width for small screens */
+    }
+}
+
+/* Responsive adjustments */
+@media (max-width: 1200px) {
+    .box {
+        width: 80%; /* Adjust width for smaller screens */
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
+        width: calc(50% - 10px); /* Adjust width for smaller screens */
+        height: auto; /* Let height adjust automatically */
+    }
+
+    .box {
+        width: 90%; /* Adjust width for smaller screens */
+    }
+}
+
+
+
+/* Basic Reset */
+
+
+
+
+.marketing-strategy {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: rgb(255, 255, 255);
+    border-radius: 8px;
+}
+
+.marketing-strategy h1 {
+    font-size: 2em;
+    margin-bottom: 30px;
+    margin-top: 50px;
+}
+
+.marketing-strategy h3 {
+    font-size: 1em;
+    margin-bottom: 30px;
+    color: #000;
+}
+
+.marketing-strategy p {
+    max-width: 1000px;
+    margin-top: 50;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 11px;
+    letter-spacing: 2px;
+    
+}
+
+.style-head {
+    letter-spacing: 2px; /* Adjust the value as needed */
+    color: #555;
+}
+
+
+/* General styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+
+
+/* Grid container */
+.image-text-grid {
+    display: grid;
+    grid-template-columns: .5fr .5fr; /* Adjust column sizes as needed */
+    gap: 20px; /* Space between columns */
+    align-items: center; /* Align items vertically centered */
+    padding: 50px;
+}
+
+/* Image container */
+.image-container {
+    position: relative;
+    overflow: hidden; /* Hide overflow */
+}
+
+.image-container img {
+    width: 100%; /* Make image width 100% of its container */
+    height: 100%; /* Make image height 100% of its container */
+    object-fit: cover; /* Cover the container while preserving aspect ratio */
+    display: block; /* Removes bottom space under image */
+}
+
+/* Text container */
+.text-container h1 {
+    letter-spacing: 3px;
+    font-style: normal;
+    font-size: 1.8rem;
+    font-weight: 800;
+    margin-left: 35px;
+    text-align: center;
+    margin-top: -50px;
+}
+
+
+
+
+.text-container h3 {
+    letter-spacing: 3px;
+    font-size: .8rem;
+    font-style: normal;
+    font-weight: 500;
+    margin-left: 35px;
+    text-align: center;
+    margin-top: -20px;
+    margin-bottom: 30px;
+}
+
+.text-container p {
+    letter-spacing: 1px;
+    font-size: .7rem;
+    font-style: normal;
+    font-weight: 500;
+    margin-left: 35px;
+    text-align: center;
+    line-height: 20px;
+}
+
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .image-text-grid {
+        grid-template-columns: 1fr; /* Stack columns on top of each other on small screens */
+    }
+
+    .text-container {
+        text-align: center; /* Center-align text on small screens */
+    }
+}
+
+.market-text
+{
+    padding: 50px;
+    background-color:   rgb(244, 244, 244);
+}
+.market-text h3 {
+    margin-top: 0;
+    margin-bottom: 10px; /* Space below the heading */
+    font-family: "Poppins", sans-serif;
+    font-weight: 800;
+    font-style: italic;
+    font-size: 32px;
+    text-align: center;
+    color: black;
+}
+
+.market-text p {
+    margin: 0;
+    padding-bottom: 20px; /* Space below the paragraph */
+    font-weight: 400;
+    font-style: normal;
+    font-size: 13px;
+    letter-spacing: 0.8;
+    text-align: center;
+}
+
+/*GRID ITEM*/
+
+.grid-container-2 {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(50px, 1fr));
+    gap: 1px;
+    padding: 10px;
+    max-width: 1200px; /* Optional: limit the maximum width of the grid container */
+    width: 100%;
+}
+
+.grid-item {
+    padding: 50px;
+    text-align: center; /* Center text horizontally */
+}
+
+.grid-item h2 {
+    font-size: 1em;
+    margin-bottom: 10px;
+    text-align: left;
+    font-weight: 600;
+    font-style: normal;
+}
+
+.grid-item p {
+    font-size: .7em;
+    line-height: 18px;
+    margin: 0;
+    text-align: justify;
+    font-weight: 300;
+    font-style: normal;
+}
+
+.highlight2 {
+    color: #444444; /* Set text color for the span element */
+}
+
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+    .grid-item h2 {
+        font-size: 1.2em;
+    }
+
+    .grid-item p {
+        font-size: 0.9em;
+    }
+}
+
+.collection-logo {
+    display: flex;
+    justify-content: center; /* Centers horizontally */
+    align-items: center; /* Centers vertically */
+    margin-bottom: 60px;
+    
+}
+
+.collection-logo img {
+    max-width: 100%; /* Ensure image fits within container */
+    height: auto; /* Maintain aspect ratio */
+}
+
+/*work with us*/
+/* Apply basic styling to the body */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Style for the Work With Us section */
+.work-with-us {
+    position: relative;
+    height: 100vh;
+    background: url('images/main-pic.jpeg') no-repeat center center/cover;
+}
+
+/* Style for the overlay */
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Black overlay with 50% opacity */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    text-align: center;
+}
+
+/* Style for the heading */
+.overlay h1 {
+    font-size: 3rem;
+    margin: 0;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.overlay p{
+    margin-top:  50px;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 12px;
+    text-align: center;
+    line-height: 30px;
+}
+
+
+/* Style for the button */
+.button {
+    display: inline-block;
+    padding: 10px 35px;
+    margin-top: 20px;
+    color: #fff;
+    background: transparent;
+    border: 0.1px solid whitesmoke; /* Optional: add a border to make the button visible*/
+    text-decoration: none;
+    font-size: 0.7rem;
+    transition: all 0.3s ease;    
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+
+}
+
+/* Button hover effect */
+.button:hover {
+    background-color: black;
+    border-radius: 3px;
+    color: whitesmoke;
+    border-style: none;
+}
+
+.footer {
+    display: flex;
+    flex-flow: row wrap;
+    padding: 30px 30px 20px 30px;
+    color: #2f2f2f;
+    background-color: #0b0b0b;
+
+  }
+  
+  .footer p{
+    font-style: normal;
+    color:  #c7c7c7;
+    font-size: 10px;
+    letter-spacing: 1px;
+    font-weight: 300;
+    font-style: normal;
+  
+  }
+  .footer > * {
+    flex:  1 100%;
+  }
+  
+  .footer__addr {
+    margin-right: 1.25em;
+    margin-bottom: 2em;
+  }
+  
+  .footer__logo {
+    font-weight: 400;
+    color: #c7c7c7;
+    font-size: 1.2rem;
+    margin-top: 35px;
+  }
+  
+  .footer__addr h2 {
+    margin-top: 1.3em;
+    font-size: 15px;
+    font-weight: 400;
+    color: #c7c7c7;
+  }
+  
+  .nav__title {
+    font-weight: 400;
+    font-size: 14px;
+    color:  #c7c7c7;
+  }
+  
+  .footer address {
+    font-style: normal;
+    color:  #c7c7c7;
+    font-size: 12px;
+  }
+  
+  .footer__btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 36px;
+    max-width: max-content;
+    background-color: rgba(255, 255, 255, 0.07);
+    color:  #c7c7c7;
+    line-height: 0;
+    margin: 1.5em 0em 1em 0em;
+    font-size: 0.6rem;
+    padding: 0 3.3em;
+    letter-spacing: 1px;
+  }
+
+  .footer__btn:hover {
+    background-color: rgb(255, 255, 255); /* Lighter background on hover */
+    color: #fff; /* Change text color on hover */
+
+}
+  
+
+  .footer ul {
+    list-style: none;
+    padding-left: 0;
+  }
+  
+  .footer li {
+    line-height: 2em;
+    font-size: 12px;
+  }
+  
+  .footer a {
+    text-decoration: none;
+    
+  }
+  
+  .footer__nav {
+    display: flex;
+    flex-flow: row wrap;
+  }
+  
+  .footer__nav > * {
+    flex: 1 50%;
+    margin-right: 1.25em;
+  }
+  
+  .nav__ul a {
+    color:#c7c7c7;
+  }
+  
+  .nav__ul--extra {
+    column-count: 2;
+    column-gap: 1.25em;
+  }
+  
+  .legal {
+    display: flex;
+    flex-wrap: wrap;
+    color: #dfdfdf;
+    font-size: 10px;
+  }
+    
+  .legal__links {
+    display: flex;
+    align-items: center;
+    font-size: 10px;
+  }
+  
+
+  @media screen and (min-width: 24.375em) {
+    .legal .legal__links {
+      margin-left: auto;
+    }
+  }
+  
+  @media screen and (min-width: 40.375em) {
+    .footer__nav > * {
+      flex: 1;
+    }
+    
+    .nav__item--extra {
+      flex-grow: 2;
+    }
+    
+    .footer__addr {
+      flex: 1 0px;
+    }
+    
+    .footer__nav {
+      flex: 2 0px;
+    }
+}
